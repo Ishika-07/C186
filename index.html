@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stars</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+        <script src="aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene id="Main_scene">
+            
+           
+                
+            <a-entity position="0 0 0"
+                          spe-particles="
+                            color:white, pink, blue,  cyan;
+                            distribution: sphere;
+                            particle-count: 1000;
+                            radius: 20;
+                            drag: 1;
+                            blending: additive;
+                            size: 1,1,1,0;
+                          "
+                >
+            </a-entity>
+
+       
+            <a-sky color="black"></a-sky>
+
+            <a-camera position="0 0 20">
+            </a-camera>
+
+        </a-scene>
+    </body>
+</html>
